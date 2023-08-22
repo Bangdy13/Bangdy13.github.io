@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D'Wedding</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    
+    <!-- Link Countdown -->
+        <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+        <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="hero" class="hero w-100 h-100 p-3 text-center text-white mx-auto d-flex justify-content-center align-items-center">
+        <main>
+            <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+            <h1>Ferdy & Putri</h1>
+            <p>Akan melangsungkan pernikahan dalam:</p>
+            <div class="simply-countdown"></div>
+            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+        </main>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top my-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">D'Wedding</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">D'Wedding</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#info">Info</a>
+                    <a class="nav-link" href="#story">Cerita</a>
+                    <a class="nav-link" href="#gallery">Album</a>
+                    <a class="nav-link" href="#rsvp">Konfirmasi</a>
+                    <a class="nav-link" href="#gift">Hadiah</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>Acara Pernikahan</h2>
+                    <h3>Diselenggarakan pada 12 September 2023 di Pengambengan, Bali</h3>
+                    <p>Oleh karena itu, dengan segela hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i untuk hadir pada acara kami.</p>
+                </div>
+            </div>
+            <div class="row couple">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-8 text-end">
+                            <h3>Ferdy Wahyudi</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam repudiandae dignissimos enim omnis rerum tenetur? 
+                            Cupiditate ea blanditiis cumque?</p>
+                            <p>Putra dari Bpk. Alex <br> dan <br> Ibu. Manohara</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/foto1.jpg" alt="Ferdy Wahyudi" class="img-responsive rounded-circle">
+                        </div>
+                    </div>
+                </div>
+                <span class="heart">
+                    <i class="bi bi-heart-fill"></i>
+                </span>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <img src="img/foto2.jpg" alt="Ferdy Wahyudi" class="img-responsive rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h3>Putri Sandrina</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam repudiandae dignissimos enim
+                                omnis rerum tenetur?
+                                Cupiditate ea blanditiis cumque?</p>
+                            <p>Putri dari Bpk. Firman <br> dan <br> Ibu. Fatimah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section id="info" class="info">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>Informasi Acara</h2>
+                    <p class="alamat">Jl. Raya Pengambengan No.Desa, Tegal Badeng Barat. <br> Kec. Negara, Kabupaten Jembrana, Bali</p>
+                    <a href="https://goo.gl/maps/X7SWvMxACRFY7bPS8" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka maps</a>
+                    <p class="description">
+                        Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan tidak ada tanda-tanda sedang dilangsungkan pernikahan,
+                        boleh jadi anda salah jadwal atau salah tempat.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-5 col-10">
+                    <div class="card text-center mb-5">
+                        <div class="card-header">
+                            Akad Nikah
+                        </div>
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <i class="bi bi-clock d-block"></i>
+                                <span>08.00 - 10.00</span>
+                            </div>
+                            <div class="col-md-6">
+                                <i class="bi bi-calendar-week d-block"></i>
+                                <span>Sabtu, 12 September 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                            Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh proses akad.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-10">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Resepsi
+                        </div>
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <i class="bi bi-clock d-block"></i>
+                                    <span>13.00 - Selesai</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <i class="bi bi-calendar-week d-block"></i>
+                                    <span>Sabtu, 12 September 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh proses akad.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Awal Mula Cinta Kami Bersemi</span>
+                    <h2>Cerita Kami</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nulla quasi sit officiis sequi ipsa?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="timeline">
+                    <li>
+                            <div class="timeline-img" style="background-image: url(img/sekolah.jpeg);">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Awal Mula Ketemu</h3>
+                                    <span>10 Mei 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsam nisi dolores id, architecto magnam.</p>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-img" style="background-image: url(img/oseng.jpg);">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Mulai Serius</h3>
+                                <span>2 Juni 2023</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsam nisi dolores id,
+                                    architecto magnam.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-img" style="background-image: url(img/tunangan.jpg);">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Tunangan</h3>
+                                <span>7 Juli 2023</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsam nisi dolores id,
+                                    architecto magnam.</p>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Memori Kisah Kami</span>
+                    <h2>Galeri Foto</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis tempora fugit, porro repudiandae quia inventore.</p>
+                </div>
+            </div>
+            <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+                <div class="col mt-3">
+                    <a href="img/galery/couple 2.jpg" data-toggle="lightbox" data-caption="This describes the image 1" data-gallery="mygallery">
+                        <img src="img/galery/thumbnail/couple.jpg" alt="" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="img/galery/cp3.jpg" data-toggle="lightbox" data-caption="This describes the image 2" data-gallery="mygallery">
+                        <img src="img/galery/thumbnail/couple.jpg" alt="" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="img/galery/cp4.jpg" data-toggle="lightbox" data-caption="This describes the image 3" data-gallery="mygallery">
+                        <img src="img/galery/thumbnail/couple.jpg" alt="" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="img/galery/cp5.jpg" data-toggle="lightbox" data-caption="This describes the image 4" data-gallery="mygallery">
+                        <img src="img/galery/thumbnail/couple.jpg" alt="" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="img/galery/cp6.jpg" data-toggle="lightbox" data-caption="This describes the image 5" data-gallery="mygallery">
+                        <img src="img/galery/thumbnail/couple.jpg" alt="" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="rsvp">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>Konfirmasi Kehadiran Tamu Undangan</h2>
+                    <p>Isi form kehadiran ini untuk melakukan konfirmasi kehadiran tamu undangan.</p>
+                </div>
+            </div>
+            <form method="POST" id="my-form" action="https://script.google.com/macros/s/AKfycbxHzgDkZj8wH6dbBIcJMLR3T_Awxpb7l8xBIE7FUbLUdfNK-Viug7ZtESkN4bBIRVU1/exec" class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama Tamu Undangan</label>
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama tamu">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="jumlah" class="form-label">Jumlah Tamu Undangan</label>
+                        <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="'1" value="1">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Kehadiran</label>
+                        <select id="status" name="status" class="form-select">
+                            <option selected>Pilih Status</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 button">
+                    <button class="btn btn-primary">Konfirmasi</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Gifts -->
+    <section id="gift" class="gift">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Ungkapan Tanda Kasih</span>
+                    <h2>Kirim Hadiah</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, blanditiis harum. Ut at sed quasi.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="fw-bold">BRI</div>
+                            123412341234 - FERDY WAHYUDI
+                        </li>
+                        <li class="list-group-item">
+                            <div class="fw-bold">BCA</div>
+                            123512351235 - FERDY WAHYUDI
+                        </li>
+                        <li class="list-group-item py-3">
+                            <div class="fw-bold mb-2">DANA ATAU GOPAY</div>
+                            <img src="img/Pilih-Mana-DANA-atau-GO-PAY.jpg" alt="" class="img-thumbnail" width="500px">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <small class="block">&copy; 2023 Ferdy Wedding. All Rights Reserved.</small>
+                    <small class="block">Design By <a href="http://instagram.com/fenzy____">@Ferdy Wahyudi</a></small>
+                    <ul class="mt-3">
+                        <li><a href="http://instagram.com/fenzy____"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="http://www.facebook.com/denzy.sanz.1"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="http://tiktok.com/@anakemakkk._"><i class="bi bi-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Javascript -->
+
+    <!-- Countdown -->
+    <script>
+         simplyCountdown('.simply-countdown', {
+                year: 2023, // required
+                month: 9, // required
+                day: 12, // required
+                hours: 8, // Default is 0 [0-23] integer
+                words: { //words displayed into the countdown
+                    days: { singular: 'hari', plural: 'hari' },
+                    hours: { singular: 'jam', plural: 'jam' },
+                    minutes: { singular: 'menit', plural: 'menit' },
+                    seconds: { singular: 'detik', plural: 'detik' }
+                },
+            });
+
+    </script>
+
+    <!-- Toogle Navbar -->
+    <script>
+        const humberger = document.querySelector('.navbar-toggler')
+        const stickytop = document.querySelector('.sticky-top')
+        const offcanvas = document.querySelector('.offcanvas')
+
+        humberger.addEventListener('click', function(){
+            stickytop.style.overflow = 'visible'
+        })
+
+        offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+                stickytop.style.overflow = 'hidden'
+            })
+    </script>
+
+    <!-- Enable & Disable Scroll -->
+    <script>
+        const rootElement = document.querySelector(':root')
+        function disableScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            window.onscroll = function () {
+                window.scrollTo(scrollTop, scrollLeft)
+            }
+
+            rootElement.style.scrollBehavior = 'auto'
+        }
+
+        function enableScroll(){
+             window.onscroll = function () {}
+             rootElement.style.scrollBehavior = 'smooth'
+             localStorage.setItem('opened', 'true')
+        }
+
+        if(!localStorage.getItem('opened')) {
+            disableScroll()
+        }
+
+    </script>
+
+    <!-- Google Sheets -->
+    <script>
+        window.addEventListener("load", function () {
+                const form = document.getElementById('my-form');
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    const action = e.target.action;
+                    fetch(action, {
+                        method: 'POST',
+                        body: data,
+                    })
+                        .then(() => {
+                            Swal.fire(
+                                'Terima Kasih!',
+                                'Konfirmasi kehadiran berhasil terkirim.',
+                                'success'
+                            )
+                        })
+                });
+            });
+
+    </script>
+
+    <!-- End Javascript -->
+</body>
+
+</html>
